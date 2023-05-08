@@ -1,0 +1,104 @@
+* {
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding-top: 120px;
+}
+header{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+header h1{
+    font-family:'Inconsolata', monospace;
+    font-weight: 400;
+    font-size: 40px;
+}
+header img{
+    height: 35px;
+    margin: 0 15px;
+}
+
+form{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+form input,
+form button{
+    background-color: #000;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 8px;
+    color: #fff;
+}
+form button{
+    background-color: #fff;
+    color: #000;
+}
+
+form input:focus{
+    border: 1px solid #fff;
+}
+form button:hover{
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    
+}
+
+table{
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+table th{
+    border-bottom: 1px solid #333;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: 600;
+}
+table td {
+    text-align: center;
+    font-size: 18px;
+    padding: 16px 0 ;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.30);
+}
+table td img{
+    height: 25px;
+}
+table th.img-user,
+table td div.delete-img{
+    width: 25px;
+    height: 25px;
+}
+table tbody tr:hover{
+    background-color:  rgba(51, 51, 51, 0.30);
+}
+
+.container{
+    background-color: rgb(17, 17, 17);
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 1px solid #333;
+    box-shadow: 0 0 0 1px #333;
+}
+
+div.delete-img{
+    cursor: pointer;
+    background-image:url('./img/delete.png');
+    background-position: center;
+    background-size: contain;
+}
+div.delete-img:hover{
+    background-image:url('./img/delete-red.png');
+}
